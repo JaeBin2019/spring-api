@@ -82,14 +82,14 @@ Content-Type: application/json
       "id": 1,
       "name": "교환권",
       "color": "#6c95d1",
-      "imageUrl": "https://example.com/image.jpg",
+      "image_url": "https://example.com/image.jpg",
       "description": "카테고리 설명"
     },
     {
       "id": 1,
       "name": "교환권",
       "color": "#6c95d1",
-      "imageUrl": "https://example.com/image.jpg",
+      "image_url": "https://example.com/image.jpg",
       "description": "카테고리 설명"
     }
   ]
@@ -122,7 +122,7 @@ Content-Type: application/json
     "id": 1,
     "name": "교환권",
     "color": "#6c95d1",
-    "imageUrl": "https://example.com/image.jpg",
+    "image_url": "https://example.com/image.jpg",
     "description": "카테고리 설명"
   }
 }
@@ -141,7 +141,7 @@ Content-Type: application/json
 {
   "name": "컴퓨터",            
   "color": "#123",           
-  "imageUrl": "http://hello",
+  "image_url": "http://hello",
   "description": "description" 
 }
 ```
@@ -164,7 +164,7 @@ Content-Type: application/json
 
 #### Request:
 ```http
-DELETE http://localhost:8080/api/categories/{id}
+DELETE http://localhost:8080/api/categories/{category_id}
 Content-Type: application/json
 ```
 
@@ -293,7 +293,7 @@ Content-Type: application/json
 {
   "name": "name",       
   "quanatity": 1000,       
-  "productId": 1       
+  "product_id": 1       
 }
 ```
 
@@ -349,7 +349,7 @@ Content-Type: application/json
 {
   "quantity": 12,         
   "message": "message",
-  "optionId": 1    
+  "option_id": 1    
 }
 ```
 
@@ -395,7 +395,7 @@ Content-Type: application/json
 ```json
 {
   "data": {
-    "page": 3,
+    "total_page": 3,
     "products": [
       {
         "id": 1,
