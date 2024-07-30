@@ -85,7 +85,7 @@ Content-Type: application/json
 | 제목                 | 메서드    | URL                                 | 요청 컨텐트 타입 / 요청 객체                                       | 응답 객체                                | 설명                                  |
 |----------------------|--------|-------------------------------------|---------------------------------------------------------|--------------------------------------|---------------------------------------|
 | 카테고리 목록 조회    | `GET`  | `/api/categories `                    | `Content-Type: application/json`                          | `Status: 200 OK`<br>`Body: {categories}` | 모든 카테고리 정보를 반환합니다.       |
-| 특정 카테고리 조회   | `GET`  | `/api/categories/{id}`                | `Content-Type: application/json`                          | `Status: 200 OK`<br>`Body: {category}`           | ID에 해당하는 카테고리 정보를 반환합니다. |
+| 특정 카테고리 조회   | `GET`  | `/api/categories/{category_id}`                | `Content-Type: application/json`                          | `Status: 200 OK`<br>`Body: {category}`           | ID에 해당하는 카테고리 정보를 반환합니다. |
 | 새로운 카테고리 추가 | `POST` | `/api/categories`                     | `Content-Type: application/json`<br>`body : {category}` | `Status: 200 OK`                       | 새로운 카테고리를 추가합니다.           |
 | 카테고리 삭제       | `DELETE` | `/api/categories/{category_id}`       | `Content-Type: application/json`                          | `Status: 200 OK`                       | 지정된 ID의 카테고리를 삭제합니다.       |
 
@@ -136,7 +136,7 @@ Content-Type: application/json
 
 #### Request:
 ```http
-GET http://localhost:8080/api/categories/1
+GET http://localhost:8080/api/categories/{category_id}
 Content-Type: application/json
 ```
 
@@ -460,7 +460,7 @@ Content-Type: application/json
 body
 {
   "name": "name",       
-  "quanatity": 1000,       
+  "quantity": 1000,       
   "product_id": 1       
 }
 ```
