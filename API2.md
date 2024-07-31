@@ -509,8 +509,8 @@ Content-Type: application/json
 | 제목                     | 메서드 | URL                            | 요청 컨텐트 타입 / 요청 객체                                                                    | 응답 객체                          | 설명                                       |
 |--------------------------|--------|--------------------------------|--------------------------------------------------------------------------------------|--------------------------------|--------------------------------------------|
 | 특정 페이지의 위시 목록 조회 | `GET`    | `/api/wishes?page={page_num}`    | `Authorization: Bearer {Token}`<br>`Content-Type: application/json`                      | `Status: 200 OK`<br>`Body: {data}` | 페이지네이션을 이용한 위시 목록을 반환합니다. |
-| 새로운 위시 추가          | `POST`   | `/api/wishes`                    | `Authorization: Bearer {Token}`<br>`Content-Type: application/json<br>body: {wish data}` | `Status: 200 OK`                 | 새로운 위시를 추가합니다.                    |
-| 위시 삭제                 | `DELETE` | `/api/wishes/{wish_id}`          | `Authorization: Bearer {Token}`<br>`Content-Type: application/json<br>body: {wish data}` | `Status: 200 OK`                 | 지정된 위시를 삭제합니다.                    |
+| 새로운 위시 추가          | `POST`   | `/api/wishes`                    | `Authorization: Bearer {Token}`<br>`Content-Type: application/json`<br>`body: {wish data}` | `Status: 200 OK`                 | 새로운 위시를 추가합니다.                    |
+| 위시 삭제                 | `DELETE` | `/api/wishes/{wish_id}`          | `Authorization: Bearer {Token}`<br>`Content-Type: application/json` | `Status: 200 OK`                 | 지정된 위시를 삭제합니다.                    |
 
 
 
