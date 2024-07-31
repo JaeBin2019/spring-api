@@ -517,6 +517,8 @@ Content-Type: application/json
 <details>
 <summary>GET: 특정 페이지의 위시 목록 조회</summary>
 
+* Default 상품 반환 개수 : 20개
+
 #### Request:
 ```http
 GET http://localhost:8080/api/wishes?page={page_num}
