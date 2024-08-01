@@ -2,10 +2,25 @@
 
 ### 정책
 1. 사용자별로 포인트 적립해주기!
+
 2. 구매시 0.5% 적립
 
 ## API 문서
 1. 적립 포인트 조회
+```
+GET http://localhost:8080/api/points
+Authorization: Bearer <JWT_TOKEN>
+Content-Type: application/json
+```
+
+응답
+```
+{
+  "point": 1200 
+}
+```
+
+
 2. 관리자 화면에서만 포인트 추가 될 수 있도록 : 
 3. 구매시 자동 적립
 
