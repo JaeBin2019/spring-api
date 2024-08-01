@@ -13,3 +13,19 @@
 4. 구매시 포인트 사용 어떻게 할건지?
   -> 구매 요청 객체? 
 
+```
+POST http://localhost:8080/api/orders
+Authorization: Bearer <JWT_TOKEN>
+Content-Type: application/json
+
+body 
+{
+  "quantity": 12,         
+  "message": "message",
+  "option_id": 1
+  "using_point" : 300
+}
+```
+
+
+
