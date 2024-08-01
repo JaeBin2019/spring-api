@@ -544,12 +544,14 @@ Content-Type: application/json
         "id": 21,
         "product_id": 21,
         "product_name": "test21",
+        "product_price": 2000,
         "image_url": "http://"
       },
       {
         "id": 22,
         "product_id": 21,
         "product_name": "test21",
+        "product_price": 2000,
         "image_url": "http://"
       }
     ]
